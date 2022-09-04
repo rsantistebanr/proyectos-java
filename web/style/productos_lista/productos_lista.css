@@ -1,0 +1,158 @@
+/*------------------ESTILOS BASE---------------*/
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+/*----------------Estilos del gropu-products-----------------*/
+.main{
+    /*background: rgba(0,0,0,0.2);*/
+    margin-top: 30px;
+}
+.section-group__title {
+    text-align: center;
+    margin: 25px;
+    font-size: 2em;
+    text-shadow: rgba(0, 0, 0, 0.14);
+    letter-spacing: normal;
+}
+.products {
+    position: relative;
+    /*background: blue;*/
+    width: 70%;
+    padding-bottom: 20px;
+    margin: 30px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1em;
+    /*z-index: -1000;*/
+}
+/*.products:before {
+    position: absolute;
+    content: "New";
+    font-size: 0.9em;
+    color: #fff;
+    width: 60px;
+    height: 20px;
+    padding: 5px;
+    background: #fc601c;
+    right: -5px;
+    top: 20px;
+    transform: rotate(-90deg);
+    writing-mode: vertical-lr;pone el texto en verticañ
+    width:50px;
+          word-wrap: break-word;
+          text-align:center;---corre el texto en vertical deacuerdo al tamaño del ancho del content
+}
+.products:nth-child(3):before {
+    background: #16b13a;
+}
+.products:nth-child(4):before {
+    background: #c60808;
+}
+.products:nth-child(6):before {
+    background: #16b13a;
+}
+.products:nth-child(8):before {
+    background: #d1f413;
+}
+.products:nth-child(5):before {
+    background: #d1f413;
+}
+.products:nth-child(9):before {
+    background: red;
+}*/
+.products img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.products__title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #000;
+}
+.products_link {
+    text-decoration: none;
+    color: #000;
+}
+.shopping--products {
+    color: #3e325f;
+    cursor:pointer;
+
+}
+.money {
+    color: #fc3a00;
+}
+.grid-price {
+    margin: 10px;
+    color: #000;
+}
+
+label {
+    color: #fc3a33;
+}
+
+
+@media(min-width:1024px){
+    .main{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 150px;
+        position: relative;
+        /*z-index: 1000;*/
+    }
+    .section-group{
+         margin: 0 auto;
+        display: block;
+        width: 80%;
+    }
+    
+    .column--50-25{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .column--50-25 h2{
+        position: absolute;
+        /*background: red;*/
+        top:-130px;
+        left: 0px;
+        transform: translateX(92%);
+        font-size: 2.5em;
+    }
+    .products{
+        width: 23%;
+        margin: 20px auto;
+    }
+    .galsess {
+        /*background: yellow;*/
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .galsess .col{
+        width: 45%;
+        height: 250px;
+    }
+    .col img{
+        width:100%;
+    }
+    .galsess--log4 {
+        /*background: green;*/
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 30%;
+    }
+
+
+}

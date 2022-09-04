@@ -1,0 +1,154 @@
+/* DOCUMENTO QUE CONTINEN SOLO LOS ESTILOS DEL MENU RESPOSIVE MOBILE - ESCRITORIO*/
+
+/* -- RESPONSIVE MOBILE -- */
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0 ;
+}
+span > a{
+    text-decoration: none;
+}
+header{
+    /*background:#efefef;*/
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 1.4em;
+}
+header i{
+    cursor: pointer;
+    color:#fff;
+    /*background: green;*/
+}
+
+header i:hover{
+     /*color:#ff4e00;*/
+}
+.header-title > a{
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.span-red{
+    color:red;
+}
+.span-white{
+    color:#fff;
+}
+
+/* style in menu and submenu */
+.main-nav{
+        position: relative;
+        z-index: 5000;
+    }
+.menu,.submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu{
+   /* background:#2a2555;*/
+   background: #eee;
+
+    width: 100%;
+    /* se oculta el menu*/
+    margin-left: -100%;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 4000;
+}
+.menu-link{
+    display: block;
+    position: relative;
+    padding: 15px;
+    color: #000;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.menu-link:hover{
+    background: red;
+    color:#fff;
+    font-weight: 300;
+}
+.trianggulo{
+    position: absolute;
+    left: 90%;
+}
+
+
+/*Ocultamos submenu -- cambiamos estilos solo a los menu-link del submenu*/
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition:all 0.3s;
+}
+
+.submenu .menu-link{
+    background: #ffe;
+    padding-left: 40px;
+}
+.submenu .menu-link:hover{
+    color:red;
+}
+.mostrar{
+    margin-left: 0;
+}
+.card{
+    position: relative;
+    
+}
+.target-usuario{
+    background: #aaa;
+    position: absolute;
+    margin-top: 50px;
+}
+/*.clicki:checked ~ .menu{
+    margin-left:0 ;
+}*/
+
+/* modo desktop*/
+
+@media(min-width:1024px){
+    .carrito_item{
+        color:red;
+        
+    }
+    .carrito_item:hocer{
+        color:#0077B5;
+    }
+    /*
+    .main-nav{
+        position:absolute;
+        width: 35%;
+        height: 100%;
+    }
+    
+    .menu{
+        position: absolute;
+    }
+    
+    
+    .mostrar{
+        margin-left: 0;
+    }
+
+    .trianggulo{
+        position: absolute;
+        left: 80%;
+    }
+    .trianggulo:hover{
+        
+    }*/
+}
+

@@ -1,0 +1,440 @@
+/*------------------ESTILOS BASE---------------*/
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+img {
+    display: block;
+    width: 100%;
+}
+*{
+    text-decoration: none;
+}
+/*------------------- ESTILOS DEL BANNER --------------------*/
+
+.banner-slider{
+    width: 100%;
+    overflow: hidden;
+    position:relative;
+
+}
+.banner-welcome{
+    display: flex;
+    background: #fff;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border: 2px solid red;
+    padding: 10px 0;
+    font-size: 1em;
+}
+
+.container-slider{
+    display: flex;
+    width: 400%;
+    height: 350px;
+    margin-left: -100%;/* esta propiedad es un truco para que se enfocque el segundo img del slider al comienzo*/
+
+}
+.slider-section{
+    width: 100%;
+
+}
+.slider-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.slider-btn{
+    font-size: 1.9em;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border-radius: 100%;
+    margin-left: 8px;
+    color:#000;
+}
+.btn-right{
+    right: 0; 
+    margin-right:8px;
+}
+/*----------------Estilos del gropu-products-----------------*/
+.main{
+    /*background: rgba(0,0,0,0.2);*/
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section-group__title {
+    text-align: center;
+    margin: 25px;
+    font-size: 2em;
+    text-shadow: rgba(0, 0, 0, 0.14);
+    letter-spacing: normal;
+}
+h2{
+    display: flex;
+}
+h2 .span-titulo{
+    display:block;
+    width: 12px;
+    height: 35px;
+    background: red;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+.products {
+    position: relative;
+    /*background: blue;*/
+    width: 80%;
+    padding: 15px ;
+    margin: 30px auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    text-align: center;
+    justify-content: center;
+    font-size: 1.1em;
+    /*z-index: -1000;*/
+}
+/*.products:before {
+    position: absolute;
+    content: "New";
+    font-size: 0.9em;
+    color: #fff;
+    width: 80px;
+    height: 20px;
+    padding: 5px;
+    background: #fc601c;
+    right: 10px;
+    top: 20px;
+    transform: rotate(-90deg);
+    writing-mode: vertical-lr;pone el texto en verticañ
+    width:50px;
+          word-wrap: break-word;
+          text-align:center;---corre el texto en vertical deacuerdo al tamaño del ancho del content
+}*/
+/*.products:nth-child(3):before {
+    background: #16b13a;
+}
+.products:nth-child(4):before {
+    background: #c60808;
+}
+.products:nth-child(6):before {
+    background: #16b13a;
+}
+.products:nth-child(8):before {
+    background: #d1f413;
+}
+.products:nth-child(5):before {
+    background: #d1f413;
+}
+.products:nth-child(9):before {
+    background: red;
+}*/
+.products img {
+    width: 100%;
+    height: 100%;
+    /*    object-fit: cover;
+    */
+}
+.container_img_product{
+    width: 100%;
+    height: 60%;
+    background: red;
+}
+.products__title {
+
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.shopping--products {
+    color: #3e325f;
+    cursor:pointer;
+
+}
+.money {
+    color: #fc3a00;
+}
+.grid-price {
+    margin: 10px;
+}
+
+/* ---------- paginacion ------------ */
+.paginacion{
+    display: block;
+    width: 100%;
+}
+.pagination{
+    
+    justify-content: center;
+}
+
+
+.testimonials {
+    background: #f6f6f6;
+    padding: 40px;
+    text-align: center;
+    font-size: 1.1em;
+    margin: 20px 20px;
+    letter-spacing: 1px;
+}
+.testimonials__txt {
+    letter-spacing: 3px;
+}
+label {
+    color: #fc3a33;
+}
+.galsess{
+    margin-top: 20px;
+    position: relative;
+}
+.col {
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.colimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.editor__circle{
+    border: 1.8px solid #fff;
+    color: #fff;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-size: 0.9em;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    bottom: -200px;
+    right: -200px;
+    padding: 20px;
+    padding-bottom: 80px;
+    padding-right: 50px; 
+    font-weight:bold;
+    transition: all .5s;
+}
+.col:hover .editor__circle{
+    transform: scale(1.1);
+    bottom: -70px;
+    right: -50px; 
+}
+.col:before{
+    content: "";
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255, 255, 0.2);
+    opacity: 0;
+    transition: all .5s;
+}
+.col:hover:before{
+    opacity: 1;
+}
+.col__txt{
+    color: #fff;
+    font-size: 1.5em;
+    position: absolute;
+    top:50px;
+    transform: translateX(30%)translateY(0%);
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    font-weight: bold;
+}
+.col:hover .col__txt{
+    transform: translateX(0%)translateY(-90%);
+    transition: all .5s;
+}
+.col__txt span{
+    color: #ff4e00;
+}
+.galsess .banner-content__section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #fff;
+    /*z-index: 3000;*/
+    letter-spacing: 1.5px;
+}
+.galsess--log4 {
+
+    margin: 20px 20px;
+    text-align: center;
+    padding: 5px;
+}
+.btn-icon {
+    padding: 10px;
+    font-size: 1.3em; 
+}
+.btn__log4 {
+    color: #000;
+    text-decoration: none;
+    padding: 10px 30px;
+    border: solid 2.5px #ff4e00;
+    width: 10%;
+    letter-spacing: 1.5px;
+    color: #5f5e5e;
+}
+.btn__log4:hover {
+    border: solid 2.5px #000;
+    color: #ff4e00;
+}
+.sub--title {
+    padding: 0;
+    margin: 10px;
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+}
+.sub__txt {
+    padding: 0px 0px 20px 0px;
+    margin: 20px;
+    /*background: red;*/
+    font-size: 1.1em;
+    color: #818181;
+    letter-spacing: 1.4px;
+}
+/*--------------Estilos de group--testimonial__products-------------------*/
+.group--testimonials__products{
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+.testimonials__products{
+    background: #f6f6f6;
+    padding: 10px 20px;
+    font-size: .9em;
+    margin: 0px 20px;
+    letter-spacing: 1px;
+}
+.testimonials__title{
+    color:#ff4e00;
+    font-size: .8em;
+    margin: 10px 0px;
+
+}
+.testimonials__icon {
+    border: 2px solid #989898;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: flex;
+    font-size: 1.5em;
+    margin: 20px 0px;
+}
+/*----------------Estilos de footer--------------*/
+
+
+
+
+@media(min-width:1024px){
+    /*------ paginacion ---- */
+
+    .container-slider{
+        height: 450px;
+    }
+    .banner-welcome{
+        text-align: center;
+        border: 2px solid red;
+        padding: 10px 0;
+        font-size: 1.5em;
+    }
+    .main{
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 30px;
+        position: relative;
+        /*z-index: 1000;*/
+    }
+    .group--testimonials{
+        background: #f5f5f5;
+    }
+    .column--50-25{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .column--50-25 h2{
+        position: absolute;
+        /*background: red;*/
+        top:-130px;
+        left: 0px;
+        transform: translateX(132%);
+        font-size: 2.5em;
+    }
+    .products{
+        width: 23%;
+        margin: 10px auto;
+    }
+    .galsess {
+        /*background: yellow;*/
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .galsess .col{
+        width: 45%;
+        height: 250px;
+    }
+    .col img{
+        width:100%;
+    }
+    .galsess--log4 {
+        /*background: green;*/
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 30%;
+    }
+
+    /* testimonial products*/
+    .group--testimonials__products{
+        background: #f5f5f5;
+    }
+    .testimonials__products{
+        margin: 0 auto;
+        margin-top: 25px;
+        width: 22%;
+        /*background: red;*/
+        text-align: center;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+    .testimonials__icon{
+        /*background: blue;*/
+        margin: 0 auto;
+    }
+    .testimonials__title , .testimonials__txt{
+        font-size: 1.2em;
+    }
+    h2{
+        display: flex;
+    }
+    h2 .span-titulo{
+        display:block;
+        width: 12px;
+        height: 35px;
+        background: red;
+        margin-right: 8px;
+    }
+}
